@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="12.0" layoutY="283.0" prefHeight="33.0" prefWidth="304.0" text="Введите кол-во сторон,чтобы нарисовать фигуру:" textFill="#973434">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="value1" layoutX="318.0" layoutY="287.0" prefHeight="25.0" prefWidth="68.0" />
+      <Label layoutX="56.0" layoutY="322.0" prefHeight="52.0" prefWidth="449.0" text="0-круг; 1-прямая; 2- угол; 3-треугольник; 4-квадрат; 5-пятиугольник" textFill="#973434">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="399.0" layoutY="287.0" mnemonicParsing="false" onAction="#addPikcher" text="Выполнить" />
+      <Canvas fx:id="can" height="250.0" layoutX="10.0" layoutY="10.0" width="485.0" />
+   </children>
+</AnchorPane>
